@@ -1,0 +1,127 @@
+
+        /* Sets margin and padding as zero and box-sizing as border box for every html element*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Sets background of html page */
+        
+        body {
+            background-image:url('images/background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        
+        /* Sets CSS for container */
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 7%;
+            align-items: center;
+            row-gap: 40px;
+            width: 100%;
+
+        }
+
+        .container h2 {
+            font-size: 50px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-transform: capitalize;
+            word-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .container h2 .main-heading {
+            color: yellow;
+        }
+
+        
+        /* Sets CSS for input box */
+        .input {
+            display: flex;
+            align-items: center;
+            column-gap: 5rem;
+            margin-left: 11.5rem;
+        }
+
+        .input input {
+            padding: 20px 15px;
+            width: 40rem;
+            height: 4rem;
+            background: transparent;
+            border: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 24px;
+            border-radius: 5px;
+            margin-right:5rem;
+        }
+        
+        /* CSS for generate button */
+        
+        #generate-btn {
+            background-color: yellow;
+            padding: 0px 5rem;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 25px;
+            height: 4rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        /*Set CSS for teacher in page */
+
+        #teacher {
+            height: 45%;
+            width: 20%;
+            position: fixed;
+            right: 4rem;
+            bottom: 50px;
+            display: none;
+            z-index: 2;
+        }
+        
+         /*Set CSS for output box */
+         
+        .output {
+            display: none;
+            border: 5px solid white;
+            height:auto;
+            width: 50rem;
+            position: relative;
+            margin-bottom:5rem;
+        }
+
+        .response {
+            color: white;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;
+            text-align: justify;
+            margin-top: 40px;
+            white-space:pre-wrap;
+        }
+         /*Set CSS for copy btn */
+        #copy-btn {
+            cursor: pointer;
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            padding: 10px;
+            background-color: transparent;
+            font-size: 20px;
+            border: 1px solid white;
+            outline: none;
+            color: white;
+        }

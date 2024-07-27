@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Designer</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- This div container include input box, generate button and output box ,teachers image and copy button. -->
+    
+    <div class="container">
+        <div class="heading">
+            <h2><span class="main-heading">Course Designer:</span> Get <span class="auto-type"></span> of any Course</h2>
+        </div>
+        <form id="input-form">
+            <div class="input">
+                <label for="course"></label>
+                <input type="text" id="course" name="course">
+                <button type="button" onclick="generateDetails()" id="generate-btn">Generate</button>
+            </div>
+        </form>
+        <img src="images/teacher.png" alt="" id="teacher" style="display: none;">
+        <div class="output" style="display: none;">
+            <div class="response"></div>
+            <button id="copy-btn" onclick="copyContent()">Copy</button>
+        </div>
+    </div>
+    
+    <!-- Script for Auto Typing Effect -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    
+    <!--JavaScript-->
+    <script src="script.js"></script>
+</body>
+</html>
+ 
